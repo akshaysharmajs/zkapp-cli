@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "deployAliases": {
+    "test-mina": {
+      "networkId": "testnet",
+      "url": "https://proxy.berkeley.minaexplorer.com/graphql",
+      "keyPath": "keys/test-mina.json",
+      "feepayerKeyPath": "/Users/akshaysharma/.cache/zkapp-cli/keys/testmina.json",
+      "feepayerAlias": "testmina",
+      "fee": "0.1",
+      "smartContract": "Add"
+    },
+    "devnet": {
+      "networkId": "testnet",
+      "url": "https://api.minascan.io/node/devnet/v1/graphql",
+      "keyPath": "keys/devnet.json",
+      "feepayerKeyPath": "/Users/akshaysharma/.cache/zkapp-cli/keys/testmina.json",
+      "feepayerAlias": "testmina",
+      "fee": "0.1",
+      "smartContract": "Add"
+    }
+  }
+}
