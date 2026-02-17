@@ -43,6 +43,7 @@ A script that orchestrates the entire flow:
 
 2. **Build the project**:
     ```bash
+    cd learning
     npm run build
 
     ```
@@ -81,12 +82,4 @@ View your transaction here:
 [https://minascan.io/devnet/tx/](https://minascan.io/devnet/tx/)<TRANSACTION_HASH>?type=zk-tx
 
 ```
-
----
-
-## 💡 Key Lessons Learned
-
-* **Compilation Order**: In recursive ZK-apps, the `ZkProgram` must be compiled **before** the `SmartContract` because the contract depends on the program's verification keys.
-* **Recursive Verification**: Every recursive step requires a `proof.verify()` call within the circuit to ensure the chain of computation hasn't been broken.
-* **State Alignment**: Using `this.num.requireEquals(proof.publicInput)` is essential to ensure a user is proving a transition from the *actual* current state, preventing "replay" or "stale" updates.
 
