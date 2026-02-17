@@ -90,8 +90,3 @@ View your transaction here:
 * **Recursive Verification**: Every recursive step requires a `proof.verify()` call within the circuit to ensure the chain of computation hasn't been broken.
 * **State Alignment**: Using `this.num.requireEquals(proof.publicInput)` is essential to ensure a user is proving a transition from the *actual* current state, preventing "replay" or "stale" updates.
 
----
-
-## 📄 License
-
-This project is open-source under the **Apache-2.0 License**.
